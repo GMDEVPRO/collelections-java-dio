@@ -57,13 +57,15 @@ public class CatalogueLivros {
 
     public static void main(String[] args) {
         CatalogueLivros catalogoLivros = new CatalogueLivros();
-        catalogoLivros.adicionarLivre("Livro 1", "Autor 1", 2020);
         catalogoLivros.adicionarLivre("Livro 1", "Autor 1", 2021);
+        catalogoLivros.adicionarLivre("Livro 1", "Autor 1", 2020);
         catalogoLivros.adicionarLivre("Livro 2", "Autor 1", 2022);
         catalogoLivros.adicionarLivre("Livro 3", "Autor 1", 2023);
         catalogoLivros.adicionarLivre("Livro 4", "Autor 1", 1994);
 
         System.out.println(catalogoLivros.pesquisarPorAutor("Autor 2"));
+        System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(2020, 2022));
+        System.out.println(catalogoLivros.pesquisaPorTitulo("Livro 1"));
     }
 
 }
